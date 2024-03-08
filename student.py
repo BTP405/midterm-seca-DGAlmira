@@ -52,6 +52,7 @@ class Student:
         
         if canEnroll:
             self.enrolled_courses.append(course)
+        course.add_student(self)
 
     def drop_course(self, course):
         """
